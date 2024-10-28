@@ -6,3 +6,10 @@
 // ####
 // ###
 // ##
+// #
+let triangle = '';
+for (let i = 1; i <= 7; i++) {
+    let level = i <= 4 ? i : 8 - i;  
+    triangle += '#'.repeat(level) + '\n';
+}
+console.log(triangle);

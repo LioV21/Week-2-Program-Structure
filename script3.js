@@ -9,3 +9,10 @@
 //  # # # #
 // # # # #
 //  # # # #
+for (let row = 0; row < 8; row++) {
+    let line = '';
+    for (let col = 0; col < 8; col++) {
+        line += (row + col) % 2 === 0 ? '#' : ' ';
+    }
+    console.log(line);
+}
